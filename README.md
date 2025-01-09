@@ -1,1 +1,0 @@
-# Scintific_calculator

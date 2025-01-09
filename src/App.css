@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.App {
+  text-align: center;
+}
+
+.calculator {
+  background: #414141;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: auto; /* 10 buttons per row, each button 72px wide including the gap */
+  height: auto;
+  padding-top: 20px;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  /* position: absolute; */
+  top: 0;
+  left: 10px;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.red {
+  background-color: #ff5f56;
+}
+
+.yellow {
+  background-color: #ffbd2e;
+}
+
+.green {
+  background-color: #27c93f;
+}
+
+.display {
+  background: #414141;
+  color: #fff;
+  font-size: 2em;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: right;
+  height: 40px;
+}
+
+.input {
+  font-size: 0.5em;
+  color: #aaa;
+}
+
+.result {
+  font-size: 1em;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 1px;
+}
+
+button {
+  border: none;
+  padding: 20px;
+  margin: 1px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+button:active {
+  background: #ccc;
+}
+
+.button-gray {
+  background: #555555;
+  color: #fff;
+}
+
+.button-lgray {
+  background: #73736e;
+  color: #fff;
+}
+
+.button-orange {
+  background: #f0a03b;
+  color: #fff;
+}
+
+button sup {
+  font-size: 0.6em;
+}
+
+button.zero {
+  grid-column: span 2;
+}
+
+@media (max-width: 400px) {
+  .calculator {
+    width: 100%;
+  }
+
+  button {
+    padding: 15px;
+    font-size: 1.2em;
+  }
+}
